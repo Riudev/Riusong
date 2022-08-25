@@ -90,7 +90,7 @@ class Bot(commands.Bot):
         for channel in guild.text_channels:
             try:
                 await channel.send(f"Thank you for adding {self.user.name}. Type `{self.prefix}help` for a full list of commands.\n"
-                                   f"Please consider upvoting the bot at https://discordbots.org/bot/{self.user.id} if you "
+                                   f"Please consider upvoting the bot at{self.user.id} if you "
                                    f"like {self.user.name} - it's greatly appreciated :slight_smile:")
                 break
             except discord.Forbidden as e:
@@ -128,7 +128,7 @@ class Bot(commands.Bot):
 def main():
     bot = Bot(">")
     bot.load(*Bot.INSTALLED_PLUGINS)
-    token = os.environ.get("HARMONY_TOKEN")
+    token = os.environ.get("TOKEN")
     if not token:
         token = open("token.txt").read().strip()
     bot.run(token)
