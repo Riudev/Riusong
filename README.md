@@ -5,4 +5,8 @@ Hi, this is a music bot that I will make via python, this is the only bot I made
 ##### Music
  -> Play <br>
  -> Pause <br>
- -> Resume <be>
+ -> Resume <br>
+ -> skip <br>
+ -> queen <br>
+ -> stop <br>
+ -> now playing <br>
